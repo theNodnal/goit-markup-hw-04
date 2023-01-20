@@ -7,6 +7,8 @@
     --hover-color: #4d5ae5;
     --footer-text: #e7e9fc;
     --border-portfolio-btn: #E7E9FC;
+    --border-customers-icon: #8E8F99;
+    --rgba: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 
 body {
@@ -137,10 +139,16 @@ img {
 /*----------------------- hero ------------------------*/
 
 .hero {
-    background: var(--main-color);
+    background-color: var(--main-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: var(--rgba), url(../images/hero-bg.jpg);
+    /* background: rgba(46, 47, 66, 0.7); */
     /* align-items: center; */
+    /* display: flex; */
+    /* opacity: 0.7; */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -171,7 +179,6 @@ img {
     border-radius: 4px;
     display: flex;
     border-color: var(--hover-color);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .portfolio-btn {
@@ -191,9 +198,9 @@ img {
 .portfolio-btn:focus {
     color: var(--background-color);
     background-color: var(--hover-btn-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-    0px 2px 1px rgba(0, 0, 0, 0.08), 
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero-btn:hover,
@@ -285,8 +292,7 @@ img {
     gap: 24px;
 }
 
-.team-item {
-}
+.team-item {}
 
 .second-content {
     display: flex;
@@ -331,6 +337,57 @@ img {
     color: var(--second-color);
     margin-top: 8px;
     margin-left: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.taem-soc-item {
+}
+.team-soc-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+    }
+
+.team-soc-icon {
+    fill: var(--background-btn);
+}
+
+.team-soc-link:is(:hover, :focus) {
+    background-color: var(--hover-btn-color);
+}
+
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.customers-item {
+    width: calc((100% - 168px) / 6);
+    height: 88px;
+}
+
+.customers-link {
+    width: 100px;
+    height: 100%;
+    border: 1px solid var(--border-customers-icon);
+    border-radius: 4px;
+    display: block;
 }
 
 /*------------------------- footer -----------------------------*/
@@ -379,4 +436,3 @@ img {
     display: flex;
     gap: 24px;
 }
-
