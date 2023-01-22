@@ -54,10 +54,9 @@ img {
 
 .container {
     width: 1158px;
-    /* justify-content: center; */
     padding: 0 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 /* -------------------header -------------- */
@@ -146,9 +145,8 @@ img {
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: var(--rgba), url(../images/hero-bg.jpg);
-    align-items: center;
     max-width: 1440px;
-    display: flex;
+    margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
 }
